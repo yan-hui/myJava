@@ -1,4 +1,4 @@
-package hch.lone.wolf.singleton;
+package hch.lone.wolf.gof.singleton;
 
 /**
  * @Description

@@ -1,4 +1,4 @@
-package hch.lone.wolf.singleton;
+package hch.lone.wolf.gof.singleton;
 
 /**
  * @Description 防止序列化和反序列化生成新的实例

@@ -1,4 +1,4 @@
-package hch.lone.wolf.singleton;
+package hch.lone.wolf.gof.singleton;
 
 /**
  * @Description 内部类单例,懒加载，线程友好
