@@ -1,6 +1,7 @@
 package hch.lone.wolf.base.string;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 /**
  * @Description StringBuffer测试，StringBuffer和StringBuilder都不会产生新的未使用对象，

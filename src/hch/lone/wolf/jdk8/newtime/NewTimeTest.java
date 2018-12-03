@@ -1,11 +1,14 @@
 package hch.lone.wolf.jdk8.newtime;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @Description jdk8新的日期时间API
@@ -151,5 +154,38 @@ public class NewTimeTest {
 		System.out.println("minusHours: "+minusHours.format(pattern));
 		System.out.println("minusMinutes: "+minusMinutes.format(pattern));
 		System.out.println("minusSeconds: "+minusSeconds.format(pattern));
+	}
+	@Test
+	public void test(){
+		User user = new User();
+		user.setName("anni");
+		user.setCode("11");
+		user.setAge(23);
+
+		System.out.println(user);
+		update(user);
+		System.out.println(user);
+		String str = "123";
+		update2(str);
+		System.out.println(str);
+	}
+	private void update(User user){
+		user.setName("拉拉");
+		user.setCode("22");
+
+	}
+	private void update2(String str){
+		str="12345";
+	}
+	@Test
+	public void testSet(){
+		Set<String> set = new HashSet<String>();
+		set.add("1");
+		set.add("123");
+		set.add("432");
+		set.add("123");
+		set.add("1");
+		set.add("144");
+		System.out.println(set);
 	}
 }

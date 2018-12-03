@@ -1,6 +1,7 @@
 package hch.lone.wolf.base.number;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import java.util.Random;
 

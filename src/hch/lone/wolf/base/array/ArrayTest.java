@@ -1,6 +1,7 @@
 package hch.lone.wolf.base.array;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 /**
  * @Description 数组测试

@@ -1,6 +1,7 @@
 package hch.lone.wolf.base.string;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 /**
  * @Description String类相关方法

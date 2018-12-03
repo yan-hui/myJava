@@ -1,6 +1,7 @@
 package hch.lone.wolf.base.character;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 /**
  * @Description Character类
