@@ -30,6 +30,9 @@ public class CalendarTest {
         //1--星期天，2--星期一，3--星期二
         System.out.println("星期： "+calendar.get(Calendar.DAY_OF_WEEK));
         System.out.println("本月的第几周： "+calendar.get(Calendar.DAY_OF_WEEK_IN_MONTH));
+        System.out.println("本月的第几天： "+calendar.get(Calendar.DAY_OF_MONTH));
+        System.out.println("今年的第几天： "+calendar.get(Calendar.DAY_OF_YEAR));
+
 
     }
 

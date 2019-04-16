@@ -1,5 +1,7 @@
 package hch.lone.wolf.gof.singleton;
 
+import java.io.ObjectStreamException;
+
 /**
  * @Description 懒汉式单例
  * @CreateBy hechunhui
@@ -8,6 +10,9 @@ package hch.lone.wolf.gof.singleton;
 public class LazySingleton {
     private LazySingleton(){
         System.out.println("LazySingleton is create");
+        if (instance!=null){//防止反射破解单例
+            throw new RuntimeException();
+        }
     }
     private static LazySingleton instance = null;
 
@@ -20,6 +25,15 @@ public class LazySingleton {
         if (null==instance){
             instance = new LazySingleton();
         }
+        return instance;
+    }
+
+    /**
+     * 反序列化时，如果定义了readResolve()则直接返回此方法指定的对象，而不需要单独再创建新的对象
+     * @return
+     * @throws ObjectStreamException
+     */
+    private Object readResolve() throws ObjectStreamException {
         return instance;
     }
 }
